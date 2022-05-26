@@ -1,0 +1,5 @@
+api
+====
+Application Programming Interface
+
+// Chrome/Postman re link debu, sie tora python function call kariki, tote output deba
