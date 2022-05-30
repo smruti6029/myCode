@@ -1,6 +1,6 @@
 #include<stdio.h>
+#include<conio.h>
 void main()
 {
-    int a=4;
-    printf("%f",a);
+
 }

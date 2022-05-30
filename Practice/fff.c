@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main()
 {
-    int y=10;
-    print("%c",y);
+    int i=1;
+    printf("%d%d%d",i++,++i,i++);
 }
