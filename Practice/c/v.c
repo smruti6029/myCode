@@ -1,7 +1,6 @@
 #include<stdio.h>
 void main()
 {
-    for(int i=1;;i++)
-    
-printf("%d",i);
+    char i;
+printf("%c=%d",i,i);
 }

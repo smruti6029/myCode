@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main()
 {
-    int a[30],i,n,temp,j;
+    int a[30],i,n,temp,j,flag;
     printf("enter how many data you have to enter");
     scanf("%d",&n);
     for(i=0;i<n;i++)
@@ -9,17 +9,22 @@ void main()
         printf("enter data in array");
         scanf("%d",&a[i]);
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     {
-        for(j=0;j<n-i;j++)
+        flag=0;
+
+        for(j=0;j<n-i-1;j++)
         {
         if(a[j]>a[j+1])
         {
         {
             temp=a[j];
-            a[j]=a[j+i];
+            a[j]=a[j+1];
             a[j+1]=temp;
+            flag=1;
         }
+        if(flag==0)
+        break;
         }
     }
     }

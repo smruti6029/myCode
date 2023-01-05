@@ -2,6 +2,6 @@
 #define SQUARE(A)A*A
 void main()
 {
-   printf("SQUARE=%d\t",SQUARE(10+6));
+   printf("SQUARE=%d\t",SQUARE(10+8));
 
 }

@@ -15,5 +15,5 @@ void main()
     char a,b;
     printf("enter a value");
     scanf("%c%c",&a,&b);
-    swap(a,b);
+    swap(a,b); 
 }

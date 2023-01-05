@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-  int a[10][10], transpose[10][10], r, c,res;
+  int a[10][10], transpose[10][10], r, c,res,k,mul[10][10],j,i;
   printf("Enter rows and columns: ");
   scanf("%d %d", &r, &c);
 
@@ -31,18 +31,26 @@ int main() {
     if (j == r - 1)
     printf("\n");
   }
-      if(r==c)
+    for(i=0;i<3;i++)
+    {
+      for(j=0;j<3;j++)
       {
-        for (int i = 0; i < c; ++i)
+        mul[i][j]=0;
+        for(k=0;k<3;k++)
         {
-       for (int j = 0; j < r; ++j)
-       {
-        res =transpose[i][j]*a[i][j];
-        printf(" %d ",res);
-       }
-        printf("\n");
+          mul[i][j]+=a[i][k]*transpose[k][j];
         }
 
       }
+    }
+    for (int i = 0; i < c; ++i)
+    {
+  for (int j = 0; j < r; ++j) {
+    printf("%d  ", mul[i][j]);
+    if (j == r - 1)
+    printf("\n");
+  }
+    }
+      
   return 0;
 }

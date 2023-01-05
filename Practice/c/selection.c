@@ -11,13 +11,13 @@ void main()
     }
     for(i=0;i<n;i++)
     {
-        for(j=i+1;j<n;j++)
+        for(j=0;j<n-i;j++)
         {
         if(a[j]>a[j+1])
         {
         {
             temp=a[j];
-            a[i]=a[j+1];
+            a[j]=a[j+1];
             a[j+1]=temp;
             break;
             
